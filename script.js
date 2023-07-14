@@ -1,4 +1,3 @@
-// Devo fare un conto alla rovescia da ora a domani mattina alle 9:30
 const timerElement= document.querySelector(".timer")
 
 //Setto l'orario a cui devo arrivare (in millisecondi)
@@ -19,7 +18,7 @@ const countDown = setInterval(function () {
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
+    // Output risultato html
     timerElement.innerHTML = days + "d " + hours + "h "
         + minutes + "m " + seconds + "s ";
 
